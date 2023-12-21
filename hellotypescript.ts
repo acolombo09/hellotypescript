@@ -201,16 +201,17 @@ console.log(num3);
 
 // push() : adds one or more elements to the end of an array and 
 // returns the new length of the array
-
-
+console.log(num3.push(200));
+console.log("After Push:",num3);
 
 // pop(): removes the last element from an array and returns that element
-
-
+console.log(num3.pop());
+console.log("After Pop:",num3);
 
 // concat() : returns a new array comprised of this array joined with other arrays and/or values
-
-
+var num4 : number[] = [11,22,33,44];
+console.log("After Concat:",num3.concat(num4));
 
 // reverse() : reverses the order of the elements of an array
 // the first becomes the last, and the last becomes the first
+console.log("After Reverse:",num4.reverse());
