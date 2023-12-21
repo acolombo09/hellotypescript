@@ -128,6 +128,8 @@ console.log(xx);
 ------ Typescript Arrays ------
 */
 
+// --- 1 DIMENSION ARRAY ---
+
 var num1 : number[] = [10, 20, 30, 40, 50];
 console.log(num1);
 
@@ -151,3 +153,64 @@ console.log(fruits[2]); // Banana
 
 // how many elements are present in an array
 console.log(fruits.length);
+
+// access array elements using looping
+for(var i = 0; i < fruits.length; i++){
+  console.log(fruits[i]);
+}
+console.log("Exited from the loop");
+
+// for in loop (skipping the index setting part)
+for(var j in fruits){
+  console.log(fruits[j]);
+}
+console.log("Exited from the second loop");
+
+
+// --- 2 DIMENSIONS ARRAY ---
+
+var num2 : number[][] = [[10,20],[30,40],[50,60]];
+console.log(num2);
+
+// access 2D array elements using indexes
+console.log(num2[0][0]); // 10
+console.log(num2[1][1]); // 40
+console.log(num2[2][0]); // 50
+
+// access 2D array using for loop
+console.log("Access array elements using for loop");
+
+for(var i=0; i < num2.length; i++){
+  for(var k=0; k < num2[i].length; k++){
+    console.log(num2[i][k]);
+  }
+}
+
+// access 2D array elements using for...in loop
+console.log("Access array elements using for...in loop");
+
+for(var i1 in num2){
+  for(var j1 in num2[i1]){
+    console.log(num2[i1][j1]);
+  }
+}
+
+// --- ARRAY METHODS ---
+var num3 : number[] = [1,2,3,4,5];
+console.log(num3);
+
+// push() : adds one or more elements to the end of an array and 
+// returns the new length of the array
+
+
+
+// pop(): removes the last element from an array and returns that element
+
+
+
+// concat() : returns a new array comprised of this array joined with other arrays and/or values
+
+
+
+// reverse() : reverses the order of the elements of an array
+// the first becomes the last, and the last becomes the first
