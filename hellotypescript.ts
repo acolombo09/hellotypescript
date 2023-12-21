@@ -123,3 +123,31 @@ console.log(xx);
 console.log(typeof(xx));
 xx = true;
 console.log(xx);
+
+/*
+------ Typescript Arrays ------
+*/
+
+var num1 : number[] = [10, 20, 30, 40, 50];
+console.log(num1);
+
+// typescript declaration and initialisation
+var fruit1 : string ="Mango";
+var fruit2 : string ="Apple";
+var fruit3 : string ="Banana";
+
+// #1 way
+var fruits : string[] = ["Mango", "Apple", "Banana"];
+console.log(fruits);
+
+// #2 way (less utilized)
+var fruits2 : Array<string> = ["Mango1", "Apple2", "Banana2"];
+console.log(fruits2);
+
+// Access Array elements manually in typescript
+console.log(fruits[0]); // Mango
+console.log(fruits[1]); // Apple
+console.log(fruits[2]); // Banana
+
+// how many elements are present in an array
+console.log(fruits.length);
