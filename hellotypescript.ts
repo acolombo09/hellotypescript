@@ -81,3 +81,45 @@ function example3() {
   }
   // console.log(x3); // error
 }
+
+// Advanced data types
+
+// void
+
+var nothing :  void = undefined;
+// nothing = 10;    // if it's undefined and i update it, it returns an error
+// nothing = "hello";   // same here
+
+// null
+
+var xxx = null;
+console.log(xxx);
+// xxx = "Hello";
+// console.log(xxx);
+console.log(typeof(xxx));
+
+var y : null ;
+// y = 10;  // error
+
+var aa = undefined;
+// aa = 10;
+console.log(aa);
+
+var a1 : undefined;
+// a1 = 100; // error
+
+// never (will be never runned)
+
+// var a2 : never = null; // error
+
+// any (assign any data type)
+
+var xx : any;
+xx = "hello";
+console.log(xx);
+console.log(typeof(xx));
+xx = 10;
+console.log(xx);
+console.log(typeof(xx));
+xx = true;
+console.log(xx);
