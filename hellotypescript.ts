@@ -215,3 +215,65 @@ console.log("After Concat:",num3.concat(num4));
 // reverse() : reverses the order of the elements of an array
 // the first becomes the last, and the last becomes the first
 console.log("After Reverse:",num4.reverse());
+
+/*
+------ Typescript String properties and Methods ------
+*/
+
+// Strings =  Sequence of characters
+// How to declare and initialise string in TypeScript
+var name4 : string = 'John';
+var name5 : string = "Finance";
+var name6 : string = `${name4} works in ${name5} company`;
+
+console.log(name4);
+console.log(name5);
+console.log(name6);
+
+// Property of the string : Length of the string
+// Will return the total number of characters including space whitespace
+console.log(name4.length);
+console.log(name5.length);
+console.log(name6.length);
+
+// Methods of the string in TypeScript
+// charAt() : returns the character at a given index
+console.log("charAt() of name4 :", name4.charAt(0));
+
+// concat() : combines the text of two strings and returns the new string
+console.log(name4.concat(name5).concat(name6));
+
+// indexOf() : Returns an index of first occurrence of the specified substring from a string (-1 if not found)
+console.log(name4.indexOf('J'));    // 0
+console.log(name4.indexOf('n'));    // 3
+console.log(name4.indexOf('Z'));    // -1
+
+// toUpperCase() : Returns the calling string value converted to upper case.
+console.log(name4.toUpperCase());
+
+// toLowerCase() : Returns the calling string value converted to lower case.
+console.log(name4.toLowerCase());
+
+//trim() : removes whitespace from a string
+var name7 : string = "   Finance    ";
+console.log(name7.trim());
+
+
+// replace() : The replace() method replaces the matched substring with the specified string
+var name8 : string = "Hello Typescript";
+console.log(name8.replace("Type", "Java"));
+console.log(name8.replace("e", "E"));   // replaces the first occurrence of "e"
+
+// split() : split the entire string into multiple pieces depending on the space delemeter
+var fruits3 : string = "Apple Banana Orange";
+console.log(fruits3.split(' ')); // creates an array with these strings  
+// adding an index i can decide what elements i want to split. In this case it will split the first 2 elements
+console.log(fruits3.split(' ', 2));   // ["Apple", "Banana"]
+
+
+// substring() : It returns a string between the two given indexes. Used to extract substrings in a string.
+// it need 2 indexes : one for the starting point and one for the ending point.
+// the ending point index does not consider the last index of the string.
+var str : string = "Welcome";
+console.log(str.substring(0, 3));   // "Wel"
+console.log(str.substring(2, 5));   // "lco"
